@@ -199,7 +199,7 @@ class CircleChanger(object):
             :type point: rg.Point
         """
         ################################################################
-        # TODO: 3.
+        # DONE: 3.
         #   First, READ the doc-string (specification) above.
         #   Second, READ the   run_test_get_distance_from   function
         #   (below).  Third, implement and test this method.
@@ -208,10 +208,8 @@ class CircleChanger(object):
         #   of the    rg.Point     class to compute this distance.
         #   NO CREDIT if you use the distance formula here.
         ################################################################
-        dx = self.circle.center.x - point.x
-        dy = self.circle.center.y - point.y
 
-        point.move_by(dx, dy)
+        return point.get_distance_from(self.circle.center)
 
     def swell_or_shrink_once(self, amount_to_swell_or_shrink):
         """
